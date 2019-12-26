@@ -58,6 +58,8 @@ https://code.visualstudio.com/
 
 > go 支持交叉编译 , 即:windows 下编译 linux 运行的程序,或 linux 编译成 windows 运行的程序
 
+项管详细说明请搜索 `go 交叉编译`相关的文档即可
+
 ## 相关学习资料
 
 https://studygolang.com/
