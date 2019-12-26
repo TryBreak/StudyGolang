@@ -42,9 +42,9 @@ https://code.visualstudio.com/
 
 ## 简单的指令
 
-仓库目录下执行 `go run ./1_helloWorld/hello.go` 就完了
+仓库目录下执行 `go run ./hello.go` 就完了
 
-执行 `go build ./1_helloWorld/hello.go` 则可以编译成二进制文件
+执行 `go build ./hello.go` 则可以编译成二进制文件
 
 语法:
 
@@ -53,6 +53,8 @@ https://code.visualstudio.com/
   go run <path>
 
   go build <path>
+
+  # `<path>` 为文件路径, 关于相对路径和绝对路径的概念请自行使用搜索引擎
 
 ```
 
