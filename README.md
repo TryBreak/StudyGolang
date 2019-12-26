@@ -42,9 +42,21 @@ https://code.visualstudio.com/
 
 ## 简单的指令
 
-仓库目录下执行 `go run hello.go` 就完了
+仓库目录下执行 `go run ./1_helloWorld/hello.go` 就完了
 
-执行 `go build` 则可以编译成二进制文件
+执行 `go build ./1_helloWorld/hello.go` 则可以编译成二进制文件
+
+语法:
+
+```bash
+
+  go run <path>
+
+  go build <path>
+
+```
+
+> go 支持交叉编译 , 即:windows 下编译 linux 运行的程序,或 linux 编译成 windows 运行的程序
 
 ## 相关学习资料
 
