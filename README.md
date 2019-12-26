@@ -36,7 +36,9 @@ https://code.visualstudio.com/
 
 ![go](/image/vscode-go-plug.png)
 
-然后打开 vscode 写一个 hello.go ,然后 vscode 右下角会提示你安装扩展 , 点击 ALL Install 然后登上一会儿就好了
+然后打开 vscode 写一个 hello.go ,然后 vscode 右下角会提示你安装扩展 , 点击 ALL Install 然后去泡杯咖啡
+
+> 如果提示失败,重新设置依赖代理 , 再来一遍
 
 ## 简单的指令
 
@@ -48,4 +50,6 @@ https://code.visualstudio.com/
 
 https://studygolang.com/
 
+## 作者
 
+QQ : 670188307 , 欢迎交流
