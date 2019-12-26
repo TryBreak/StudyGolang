@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"time"
+	// "time"
 )
 
 func main() {
 	fmt.Printf("hello, world")
-	time.Sleep(5 * time.Second)
+	// time.Sleep(5 * time.Second)
 }
