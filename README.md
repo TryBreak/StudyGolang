@@ -1,6 +1,6 @@
 # golang 学习笔记
 
-这么火了都,没理由不学啊,
+这么火了都,没理由不学啊
 
 ## 环境安装
 
@@ -8,7 +8,7 @@
 
 <https://studygolang.com/dl>
 
-安装完成后命令行敲入
+安装完成后命令行敲入检测环境变量和安装是否成功
 
 ```shell
 
@@ -26,19 +26,24 @@ go env -w GOPROXY=https://goproxy.cn,direct
 
 ```
 
-说明文档:
+依赖代理的说明文档:
 
 <https://github.com/goproxy/goproxy.cn/blob/master/README.zh-CN.md>
 
-## vscode 安装 golang 插件
+## 编辑器配置
+
+宇宙无敌 IDE 的亲儿子
+vscode 下载地址:
 
 https://code.visualstudio.com/
 
+插件安装(认准 Microsoft)
+
 ![go](/image/vscode-go-plug.png)
 
-然后打开 vscode 写一个 hello.go ,然后 vscode 右下角会提示你安装扩展 , 点击 ALL Install 然后去泡杯咖啡
+然后打开 vscode 新建一个文件夹, 写一个 hello.go ,然后 vscode 右下角会提示你安装扩展 , 点击 ALL Install 然后去泡杯咖啡等待提示全部安装成功就好了
 
-> 如果提示失败,重新设置依赖代理 , 再来一遍
+> 如果提示失败, 就重新设置依赖代理 , 再来一遍
 
 ## 简单的指令
 
