@@ -159,16 +159,28 @@ breakTag:
 
 }
 
+func for99Down() {
+	for a := 9; a > 0; a-- {
+		for b := 9; b > 0; b-- {
+			if a >= b {
+				fmt.Printf("%v*%v=%v ", a, b, a*b)
+			}
+		}
+		fmt.Println()
+	}
+}
+
 func main() {
 	// ifDemo1()
 	// ifDemo2()
-	// forDemo99()
+	forDemo99()
 	// forDemo()
 	// forRange()
 	// switchDemo1()
 	// switchDemo2()
 	// switchDemo3()
 	// switchDemo4()
-	gotoDemo()
+	// gotoDemo()
+	for99Down()
 
 }
