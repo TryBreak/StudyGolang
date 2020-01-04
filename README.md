@@ -2,7 +2,7 @@
 
 这么火了都,没理由不学啊
 
-## 环境安装
+## windows 下环境安装
 
 下载安装包 , 无脑下一步
 
@@ -17,6 +17,29 @@ go version
 ```
 
 ![go-version](/image/go-version.png)
+
+## Linux 下环境安装
+
+<https://studygolang.com/dl>
+
+1. 下载 linux 包
+
+2. 然后解压
+
+3. 配置环境变量等：
+
+```bash
+
+sudo vim /etc/profile
+
+## 在最后添加以下内容
+
+export GOROOT=/opt/go  #指向你的安装目录
+export GOPATH=~/golib:~/goProject
+export GOBIN=~/gobin
+export PATH=$PATH:$GOROOT/bin:$GOBIN
+
+```
 
 ## 设置依赖代理
 
