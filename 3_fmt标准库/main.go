@@ -12,6 +12,7 @@ func main() {
 	fmt.Printf("%x\n", n) // 十六进制
 
 	const s = "梅花"
-	fmt.Printf("%s\n", s) // 字符串
+	fmt.Printf("%s\n", s)  // 字符串
 	fmt.Printf("%#v\n", s) // # 添加描述符号
+	fmt.Printf("%p \n", s) // p 打印内存地址
 }
