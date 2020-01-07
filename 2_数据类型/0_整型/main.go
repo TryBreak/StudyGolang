@@ -1,9 +1,10 @@
+package main
+
 /*
 
 	golang 无法直接定义二进制 , 只能先定义为十进制然后转化为二进制
 
 */
-package main
 
 import "fmt"
 
