@@ -45,7 +45,14 @@ func newDemo() {
 }
 
 func makeDemo() {
-	//make也用于分配内存 它只用于
+	//make也用于分配内存 它只用于 slice、map 以及 channel
+	var m1 map[string]int
+	fmt.Println(m1 == nil) // nil 没有在内存中开辟空间
+
+	m1 = make(map[string]int, 10) // 要估算好该map容量,避免在程序运行期间再动态扩容
+	m1["理想"] = 18
+	m1["姬无命"] = 35
+	fmt.Println(m1)
 }
 func main() {
 	// getDemo()

@@ -2,6 +2,8 @@
 
 这么火了都,没理由不学啊
 
+标准库文档 <https://studygolang.com/pkgdoc>
+
 ## windows 下环境安装
 
 下载安装包 , 无脑下一步
