@@ -40,6 +40,18 @@ func f6(x, y int, m, n string, i, j bool) int {
 func f7(x string, y ...int) {
 	fmt.Println(x)
 	fmt.Println(y) //y的类型是切片
+
+	//不可以在命名函数中声明命名函数
+	// func f8()  {
+	// 	return 9
+	// }
+
+	//但是可以 声明匿名函数
+
+	func() {
+		y[0]++
+	}()
+
 }
 
 // GO 中没有more参数这个概念 , 所见即所得
@@ -50,5 +62,49 @@ func main() {
 
 	// _, n := f6()
 	// fmt.Println(n)
-	f7("阿松大", 2, 3, 4)
+	// f7("阿松大", 2, 3, 4)
+
+	//defer
+
+	// deferDemo()
+
+	// f111()
+	// defer f222()
+	// defer f333() // 多个defer 按照先进后出(后进先出)的顺序执行
+	// f444()
+
+	s := []int{1, 2, 3, 4, 5}
+	fmt.Println(s)
+
 }
+
+func deferDemo() {
+	fmt.Println("start")
+	defer fmt.Println("嘿嘿嘿") // 延迟到函数即将返回的时候执行
+	fmt.Println("end")
+}
+
+func f111() {
+	fmt.Println(1111111111111)
+}
+func f222() {
+	fmt.Println(22222222222)
+}
+func f333() {
+	fmt.Println(333333333333)
+}
+func f444() {
+	fmt.Println(444444444444)
+}
+
+/*
+go 中的 return不是原子操作
+
+分为两步执行
+
+1. 返回值赋值
+2. 真正的RET返回
+
+函数中如果存在defer , 那么 defer 则自第一步和第二步之间
+
+*/
