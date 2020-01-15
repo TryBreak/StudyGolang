@@ -18,7 +18,8 @@ import (
 func main() {
 	// fmt.Printf("hello, world \n")
 	// time.Sleep(5 * time.Second)  命令行延迟五秒关闭
-	start()
+	// start()
+	fmt.Println(0.1 + 0.2)
 }
 
 func start() {
