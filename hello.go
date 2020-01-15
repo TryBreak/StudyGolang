@@ -25,6 +25,10 @@ func start() {
 	num := 9000000000
 	startTime := time.Now().UnixNano() / 1e6
 
+	// for i := 0; i < num; i++ {
+	// 	// fmt.Printf("当前i的值:%v \n", i)
+	// }
+
 	for i := num; i >= 0; i-- {
 		// fmt.Printf("当前i的值:%v \n", i)
 	}
