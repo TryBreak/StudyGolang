@@ -3,6 +3,28 @@ package main
 import "fmt"
 
 func main() {
+	// demo()
+	splitStr()
+}
+
+func splitStr() {
+	s := "[ 9 +0]=  9"
+
+	var s1 string
+
+	for _, v := range s {
+		// fmt.Printf("%s \n", string(v))
+		if string(v) == " " {
+			// fmt.Printf("这玩意儿是空格\n")
+		} else {
+			s1 = s1 + string(v)
+		}
+	}
+
+	fmt.Println(s1)
+}
+
+func demo() {
 	/*
 		双引号为字符串
 		单引号为字符
