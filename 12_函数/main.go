@@ -76,6 +76,8 @@ func main() {
 	s := []int{1, 2, 3, 4, 5}
 	fmt.Println(s)
 
+	fff()
+
 }
 
 func deferDemo() {
@@ -95,6 +97,10 @@ func f333() {
 }
 func f444() {
 	fmt.Println(444444444444)
+}
+
+var fff = func() {
+	fmt.Println("sadsadsad")
 }
 
 /*
