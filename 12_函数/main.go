@@ -73,10 +73,13 @@ func main() {
 	// defer f333() // 多个defer 按照先进后出(后进先出)的顺序执行
 	// f444()
 
-	s := []int{1, 2, 3, 4, 5}
-	fmt.Println(s)
+	// s := []int{1, 2, 3, 4, 5}
+	// fmt.Println(s)
 
-	fff()
+	// fff()
+
+	x := f98()
+	fmt.Println(x)
 
 }
 
@@ -114,3 +117,12 @@ go 中的 return不是原子操作
 函数中如果存在defer , 那么 defer 则自第一步和第二步之间
 
 */
+
+func f98() (aa int) {
+	x := 5
+	aa = x
+	defer func() {
+		x++
+	}()
+	return
+}
