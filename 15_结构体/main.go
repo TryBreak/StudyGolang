@@ -1,9 +1,30 @@
 package main
 
+// 和TS一样一样的
+
 import "fmt"
 
 func main() {
 	// typeDemo()
+	structDemo1()
+}
+
+func structDemo1() {
+	type person struct {
+		name   string
+		age    int
+		hobby  []string // 如果不赋值则为空值
+		gender string
+	}
+
+	var p person
+
+	p.name = "Mark"
+	p.age = 26
+	p.gender = "男"
+	p.hobby = []string{"篮球", "足球", "双色球"}
+
+	fmt.Printf("类型%T \n 值%v \n", p, p)
 }
 
 func typeDemo() {
