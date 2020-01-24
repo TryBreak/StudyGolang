@@ -22,7 +22,7 @@ func main() {
 
 }
 
-func printArray(arr [5]int) { //函数传值永远都是值类型
+func printArray(arr [5]int) { //函数传值永远都是值类型 , 方法只有一个,那就是值传递
 	arr[0] = 100
 	for i, v := range arr {
 		fmt.Println(i, v)
