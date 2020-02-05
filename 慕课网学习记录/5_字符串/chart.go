@@ -39,4 +39,6 @@ func main() {
 
 	fmt.Println(string(runeS2[4]))
 
+	//字符串库  strings
+
 }
