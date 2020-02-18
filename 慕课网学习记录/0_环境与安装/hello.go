@@ -8,4 +8,5 @@ import (
 func main() {
 	fmt.Println("xxx")
 	fmt.Println(runtime.GOARCH)
+
 }
