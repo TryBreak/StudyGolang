@@ -21,7 +21,7 @@ func curd() {
 	printSlice(s)
 
 	fmt.Println("copy")
-	copy(s,s1)
+	copy(s, s1)
 	printSlice(s)
 
 	fmt.Println("新增")
