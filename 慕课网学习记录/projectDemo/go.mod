@@ -1,4 +1,4 @@
-module goDemo
+module projectDemo
 
 go 1.14
 
