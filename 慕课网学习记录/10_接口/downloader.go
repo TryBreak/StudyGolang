@@ -8,15 +8,21 @@ package main
 import (
 	"fmt"
 
-	"interface.com/infra"
+	// "interface.com/infra"
+	"interface.com/testing"
 )
 
-func getRetriever() infra.Retriever {
-	return infra.Retriever{}
+func getRetriever() testing.Retriever {
+	return testing.Retriever{}
+}
+
+// ? : Something that can "Get"
+type retriever interface {
+	Get(string) string
 }
 
 func main() {
-	var retriever infra.Retriever = getRetriever()
+	var r retriever = getRetriever()
 	// retriever := getRetriever()
-	fmt.Println(retriever.Get("https://www.imooc.com"))
+	fmt.Println(r.Get("https://www.imooc.com"))
 }
