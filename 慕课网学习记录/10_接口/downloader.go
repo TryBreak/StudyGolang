@@ -7,23 +7,16 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
-	"net/http"
+
+	"interface.com/infra"
 )
 
-func retrieve(url string) []byte {
-	resp, err := http.Get(url)
-	if err != nil {
-		panic(err)
-	}
-	defer resp.Body.Close()
-
-	bytes, _ := ioutil.ReadAll(resp.Body)
-
-	return bytes
+func getRetriever() infra.Retriever {
+	return infra.Retriever{}
 }
 
 func main() {
-	bytes := retrieve("https://www.imooc.com")
-	fmt.Printf("%s \n", bytes)
+	var retriever infra.Retriever = getRetriever()
+	// retriever := getRetriever()
+	fmt.Println(retriever.Get("https://www.imooc.com"))
 }
