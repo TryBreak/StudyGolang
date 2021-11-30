@@ -8,4 +8,6 @@ func main() {
 	fmt.Println("Hello World3")
 	var age = 19
 	fmt.Println(age)
+	fmt.Println("asdasdasd",
+		"asdasdasd", "asdasdasd", "asdasdasd", "asdasdasd", "asdasdasd", "asdasdasd")
 }
