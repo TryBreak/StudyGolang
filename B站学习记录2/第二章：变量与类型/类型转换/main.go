@@ -52,7 +52,7 @@ func main() {
 	// 第一个参数必须是 int64 ， 第二个参数是字面量十进制
 	fmt.Printf("s1 的类型是：%T , s1 = %q \n", s1, s1)
 
-	var n2 float64 = 3.14159265358979323846
+	var n2 float64 = 0.00009999
 	var s2 string = strconv.FormatFloat(float64(n2), 'f', 20, 64)
 	var s3 string = fmt.Sprintf("%f", n2)
 	var s4 string = strconv.FormatFloat(float64(n2), 'f', 20, 32)
