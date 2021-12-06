@@ -12,5 +12,25 @@ func main() {
 		sum += i
 		fmt.Println("for 循环sum", sum)
 	}
+	fmt.Println("-----------")
 
+	// for i
+	var str string = "hello golang"
+
+	fmt.Println(str[1])
+
+	for i := 0; i <= len(str); i++ {
+		fmt.Println(str[i])
+	}
+
+	fmt.Println("-----------")
+
+	// for range
+	var str2 string = "hello golang"
+
+	for i, v := range str2 {
+		fmt.Println(i, v)
+	}
+
+	fmt.Println("-----------")
 }
