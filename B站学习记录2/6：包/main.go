@@ -4,10 +4,14 @@ package main // package 进行包的声明，建议：包的声明这个包和�
 import (
 	fmt "fmt"
 
-	test "test.com/test"
-
 	utils "test.com/dbutils"
+
+	test "test.com/test"
 )
+
+func init() {
+	fmt.Println("main 函数的 init ")
+}
 
 func main() {
 	var age int64 = 64
