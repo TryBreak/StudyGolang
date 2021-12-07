@@ -55,10 +55,10 @@ func main() {
 	var b, c = test05(10, 20)
 	fmt.Printf("b 的值是：%v,c 的值是 %v \n", b, c)
 
-	func test06(num1 int, num2 int) (sum int, sub int) {
+	func(num1 int, num2 int) (sum int, sub int) {
 		sum = num1 - num2
 		sub = num2 - num1
 		return
-	}
+	}(10, 20)
 
 }
