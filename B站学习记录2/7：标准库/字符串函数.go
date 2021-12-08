@@ -58,7 +58,29 @@ func main() {
 	fmt.Println("indeOf---", indeOf)
 
 	fmt.Println("------字符串的替换-----")
-	var repla string = strings.Replace("golang and java ga", "go", "golang", 2)
+	var repla string = strings.Replace("golang and java gogogo", "go", "golang", -1)
 	fmt.Println("repla---", repla)
+
+	fmt.Println("------字符串切割标识符-----")
+	var spli []string = strings.Split("go-python-java", "-")
+	fmt.Println("spli---", spli)
+
+	fmt.Println("------大小写字符串-----")
+	var lower string = strings.ToLower("go-python-java")
+	var upper string = strings.ToUpper("go-python-java")
+	fmt.Println("lower---", lower)
+	fmt.Println("upper---", upper)
+
+	fmt.Println("------去掉两边指定字符串-----")
+	var s4 string = strings.Trim("~go-python-java~", "~")
+	fmt.Println("s4---", s4)
+
+	var s5 string = strings.TrimLeft("~go-python-java~", "~")
+	fmt.Println("s5---", s5)
+
+	var s6 string = strings.TrimRight("~go-python-java~", "~")
+	fmt.Println("s6---", s6)
+
+	// 是否制定开头，是否指定结尾
 
 }
