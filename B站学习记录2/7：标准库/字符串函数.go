@@ -57,4 +57,8 @@ func main() {
 	var indeOf int = strings.Index("golag and java ga", "a")
 	fmt.Println("indeOf---", indeOf)
 
+	fmt.Println("------字符串的替换-----")
+	var repla string = strings.Replace("golang and java ga", "go", "golang", 2)
+	fmt.Println("repla---", repla)
+
 }
