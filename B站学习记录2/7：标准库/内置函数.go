@@ -13,7 +13,7 @@ func main() {
 	fmt.Println("---new 分配内存-----")
 	// 返回该内存新分配的零值的指针
 
-	var n1 *int = new(int)
+	var n1 *int = new(int) // 参数是一个类型
 	fmt.Println("n1", n1)
 
 }
