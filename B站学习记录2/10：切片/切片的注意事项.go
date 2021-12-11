@@ -41,4 +41,14 @@ func main() {
 	fmt.Printf("slice 扩容数组的地址：%p \n", &slice)
 	fmt.Printf("slice ：%v \n", slice)
 
+	fmt.Println("-------拷贝----------")
+
+	var a []int = []int{1, 4, 7, 3, 6, 9}
+	var b []int = make([]int, 10)
+
+	// 拷贝
+	copy(b, a) // 将A的内容复制到B中
+	fmt.Println(a)
+	fmt.Println(b)
+
 }
