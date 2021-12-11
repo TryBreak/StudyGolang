@@ -29,4 +29,9 @@ func main() {
 	// 方式3
 	// 定一个切片,直接就指定具体数组,使用方式类似于 make
 
+	var slice4 = [3]int{1, 3, 9}
+	fmt.Println("slice3 ", slice4)
+	fmt.Println("slice3 cap", cap(slice4))
+	fmt.Println("slice3 len", cap(slice4))
+
 }
