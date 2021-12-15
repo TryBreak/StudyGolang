@@ -10,4 +10,13 @@ func main() {
 	fmt.Println(age)
 	fmt.Println("asdasdasd",
 		"asdasdasd", "asdasdasd", "asdasdasd", "asdasdasd", "asdasdasd", "asdasdasd")
+
+	var s3 string = "爱我a中华"
+	var r3 = []rune(s3)
+	fmt.Println((r3))
+	fmt.Println(string(r3[0]))
+	fmt.Println(s3[1])
+	fmt.Println(s3[2])
+	fmt.Println(s3[3])
+	fmt.Println(s3[4])
 }
