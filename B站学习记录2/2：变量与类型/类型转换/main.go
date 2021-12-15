@@ -91,4 +91,7 @@ func main() {
 	f4, _ = strconv.ParseBool(s4)
 	fmt.Printf("f4 的类型是： %T f4 = %v \n", f4, f4)
 
+	var i4 uintptr = 123
+	fmt.Printf("i4 的类型是： %T i4 = %v \n", i4, i4)
+
 }
