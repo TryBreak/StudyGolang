@@ -22,6 +22,7 @@ func test() {
 			fmt.Println("err是：", err)
 		}
 	}()
+
 	num1 := 100
 	num2 := 0
 	result := num1 / num2

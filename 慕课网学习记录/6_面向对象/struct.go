@@ -3,8 +3,9 @@ package main
 import "fmt"
 
 type treeNode struct {
-	value       int
-	left, right *treeNode
+	value int
+	left  *treeNode
+	right *treeNode
 }
 
 func (node treeNode) print() { //  和 print(node treeNode) 没有区别
