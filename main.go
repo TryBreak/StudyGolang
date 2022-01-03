@@ -1,10 +1,5 @@
 package main
 
-import (
-	"log"
-	"time"
-)
-
 // 延迟函数
 
 /*
@@ -17,15 +12,15 @@ import (
 
 // 协程
 // 轻量级线程
+type Animal interface {
+	Speak() string
+}
+
+type Dog struct{}
+
+func (d Dog) Speak() string {
+	return "Woof!"
+}
 
 func main() {
-	var a [10]int
-	for i := 0; i < 10; i++ {
-		go func(i int) {
-			a[i] += i
-		}(i)
-		time.Sleep(time.Duration(1) * time.Millisecond * 1000 * 1)
-		log.Println(a)
-	}
-	log.Println(a)
 }

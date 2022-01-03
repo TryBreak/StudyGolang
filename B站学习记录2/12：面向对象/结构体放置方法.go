@@ -1,3 +1,6 @@
+package main
+
+import "fmt"
 
 type treeNode struct {
 	value int
