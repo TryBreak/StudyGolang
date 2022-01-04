@@ -1,6 +1,5 @@
 {
   "scripts": {
     "sync": "git pull && git add . && git commit -m '调试' && git push"
-  },
-  "dependencies": {}
+  }
 }
