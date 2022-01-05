@@ -13,6 +13,7 @@ func main() {
 		for {
 			n += 1
 			time.Sleep(time.Second * 3)
+			fmt.Println("n", n)
 			if n > 3 {
 				close(chnaO)
 			} else {
@@ -26,6 +27,7 @@ func main() {
 		for {
 			n += 1
 			time.Sleep(time.Second * 4)
+			fmt.Println("n", n)
 			if n > 3 {
 				close(chnaO)
 			} else {
