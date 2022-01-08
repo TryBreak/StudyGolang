@@ -12,42 +12,40 @@ func main() {
 		n := 0
 		for {
 			n += 1
-			time.Sleep(time.Second * 3)
-			fmt.Println("n", n)
-			if n > 3 {
+			if n > 6 {
 				close(chnaO)
-			} else {
-				chnaO <- n
+				break
 			}
+			fmt.Printf("通道发送")
+			chnaO <- n
+			time.Sleep(time.Second * 1)
 		}
 	}()
-
-	go func() {
-		n := 0
-		for {
-			n += 1
-			time.Sleep(time.Second * 4)
-			fmt.Println("n", n)
-			if n > 3 {
-				close(chnaO)
-			} else {
-				chnaO <- n
-			}
-		}
-	}()
-
+	// https://cloud.tencent.com/developer/article/1412490
 	go func() {
 		for k := range chnaO {
-			fmt.Println("1接收到了K", k)
+			if k == 2 {
+				chnaO = nil
+			}
+			fmt.Println("K:", k)
 		}
 		fmt.Println("1进程结束")
 	}()
 
 	go func() {
 		for k := range chnaO {
-			fmt.Println("2接收到了K", k)
+			fmt.Println("接收到了K", k)
 		}
-		fmt.Println("2进程结束")
+		fmt.Println("K进程结束")
+	}()
+
+	go func() {
+		for {
+			select {
+			case x := <-chnaO:
+				fmt.Println("select接收到了 x ", x)
+			}
+		}
 	}()
 
 	time.Sleep(time.Second * 5000)
