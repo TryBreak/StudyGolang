@@ -10,7 +10,7 @@ import (
 // https://blog.csdn.net/ALakers/article/details/111713405
 
 func main() {
-	url := "ws://localhost:8080/ws" // 服务器地址
+	url := "ws://hunt.mo7.cc/api/wss" // 服务器地址
 	ws, _, err := websocket.DefaultDialer.Dial(url, nil)
 	if err != nil {
 		log.Fatal(err)
