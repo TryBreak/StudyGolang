@@ -4,8 +4,8 @@ import (
 	"fmt"
 )
 
-var L = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+var L = []int{}
 
 func main() {
-	fmt.Println(L[0:2])
+	fmt.Println(L[0:])
 }
