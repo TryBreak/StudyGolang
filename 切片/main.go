@@ -1,11 +1,11 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-var L = []int{}
+var L = []int{1, 2, 3, 4, 5, 6, 7, 8}
 
 func main() {
-	fmt.Println(L[0:])
+
+	fmt.Println(L[:len(L)])
+
 }
